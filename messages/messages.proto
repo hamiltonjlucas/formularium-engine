@@ -1,0 +1,26 @@
+// Formularium engine — local messages. Leading comments become registry docs.
+
+syntax = "proto3";
+
+package hamiltonjlucas.formularium_engine;
+
+import "hamiltonjlucas_formularium_types_messages.proto";
+
+// Empty input for zero-argument nodes.
+message Empty {
+}
+
+// Fan-in input for AssembleCatalog: one field per Formularium source package,
+// each filled by a plain per-edge adapter in the catalog-assemble flow.
+message AssembleCatalogInput {
+  // formularium-constants/GetCatalog output (constants filled, domains empty).
+  hamiltonjlucas.formularium_types.Catalog constants = 1;
+  hamiltonjlucas.formularium_types.DomainCatalog electroweak = 2;
+  hamiltonjlucas.formularium_types.DomainCatalog flavor = 3;
+  hamiltonjlucas.formularium_types.DomainCatalog bz_cascade = 4;
+  hamiltonjlucas.formularium_types.DomainCatalog atomic = 5;
+  hamiltonjlucas.formularium_types.DomainCatalog em_si = 6;
+  hamiltonjlucas.formularium_types.DomainCatalog gravity_thermo = 7;
+  hamiltonjlucas.formularium_types.DomainCatalog cosmology = 8;
+  hamiltonjlucas.formularium_types.DomainCatalog quantum_info = 9;
+}
