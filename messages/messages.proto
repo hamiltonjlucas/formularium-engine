@@ -1,22 +1,26 @@
 // Formularium engine — local messages. Leading comments become registry docs.
+// The catalog slices arrive as JSON strings (edge adapters use toJson(value)):
+// embedding imported message types as fields trips the registry's per-package
+// message uniqueness on push, so the fan-in shim is stringly-typed by design.
+// The assembled OUTPUT is the fully-typed formularium-constants Catalog.
 
 syntax = "proto3";
 
 package hamiltonjlucas.formularium_engine;
 
-import "hamiltonjlucas_formularium_constants_messages.proto";
-
-// Fan-in input for AssembleCatalog: one field per Formularium source package,
-// each filled by a plain per-edge adapter in the catalog-assemble flow.
+// Fan-in input for AssembleCatalog: one JSON-encoded catalog slice per source
+// package, each filled by a per-edge adapter (toJson(value)) in the
+// catalog-assemble flow.
 message AssembleCatalogInput {
-  // formularium-constants/GetCatalog output (constants filled, domains empty).
-  hamiltonjlucas.formularium_constants.Catalog constants = 1;
-  hamiltonjlucas.formularium_constants.DomainCatalog electroweak = 2;
-  hamiltonjlucas.formularium_constants.DomainCatalog flavor = 3;
-  hamiltonjlucas.formularium_constants.DomainCatalog bz_cascade = 4;
-  hamiltonjlucas.formularium_constants.DomainCatalog atomic = 5;
-  hamiltonjlucas.formularium_constants.DomainCatalog em_si = 6;
-  hamiltonjlucas.formularium_constants.DomainCatalog gravity_thermo = 7;
-  hamiltonjlucas.formularium_constants.DomainCatalog cosmology = 8;
-  hamiltonjlucas.formularium_constants.DomainCatalog quantum_info = 9;
+  // formularium-constants/GetCatalog output (a Catalog JSON: constants filled).
+  string constants_json = 1;
+  // Each domain package's GetCatalog output (a DomainCatalog JSON).
+  string electroweak_json = 2;
+  string flavor_json = 3;
+  string bz_cascade_json = 4;
+  string atomic_json = 5;
+  string em_si_json = 6;
+  string gravity_thermo_json = 7;
+  string cosmology_json = 8;
+  string quantum_info_json = 9;
 }
