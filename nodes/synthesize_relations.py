@@ -5,7 +5,7 @@ import zlib
 from typing import Iterator
 
 from gen.axiom_context import AxiomContext
-from gen.hamiltonjlucas_formularium_types_messages_pb2 import (
+from gen.hamiltonjlucas_formularium_constants_messages_pb2 import (
     SynthesizeEvent,
     SynthesizeShardRequest,
 )

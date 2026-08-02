@@ -1,6 +1,6 @@
 """Synthetic Catalog fixtures for engine node tests (not a node — ships as a helper)."""
 
-from gen.hamiltonjlucas_formularium_types_messages_pb2 import Catalog
+from gen.hamiltonjlucas_formularium_constants_messages_pb2 import Catalog
 
 ALPHA = 0.0072973525693
 E_EM = 0.30282212088  # sqrt(4 pi alpha)

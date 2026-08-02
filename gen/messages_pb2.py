@@ -22,18 +22,16 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 _sym_db = _symbol_database.Default()
 
 
-import hamiltonjlucas_formularium_types_messages_pb2 as hamiltonjlucas__formularium__types__messages__pb2
+import hamiltonjlucas_formularium_constants_messages_pb2 as hamiltonjlucas__formularium__constants__messages__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0emessages.proto\x12!hamiltonjlucas.formularium_engine\x1a/hamiltonjlucas_formularium_types_messages.proto\"\x07\n\x05\x45mpty\"\xf5\x04\n\x14\x41ssembleCatalogInput\x12<\n\tconstants\x18\x01 \x01(\x0b\x32).hamiltonjlucas.formularium_types.Catalog\x12\x44\n\x0b\x65lectroweak\x18\x02 \x01(\x0b\x32/.hamiltonjlucas.formularium_types.DomainCatalog\x12?\n\x06\x66lavor\x18\x03 \x01(\x0b\x32/.hamiltonjlucas.formularium_types.DomainCatalog\x12\x43\n\nbz_cascade\x18\x04 \x01(\x0b\x32/.hamiltonjlucas.formularium_types.DomainCatalog\x12?\n\x06\x61tomic\x18\x05 \x01(\x0b\x32/.hamiltonjlucas.formularium_types.DomainCatalog\x12>\n\x05\x65m_si\x18\x06 \x01(\x0b\x32/.hamiltonjlucas.formularium_types.DomainCatalog\x12G\n\x0egravity_thermo\x18\x07 \x01(\x0b\x32/.hamiltonjlucas.formularium_types.DomainCatalog\x12\x42\n\tcosmology\x18\x08 \x01(\x0b\x32/.hamiltonjlucas.formularium_types.DomainCatalog\x12\x45\n\x0cquantum_info\x18\t \x01(\x0b\x32/.hamiltonjlucas.formularium_types.DomainCatalogb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0emessages.proto\x12!hamiltonjlucas.formularium_engine\x1a\x33hamiltonjlucas_formularium_constants_messages.proto\"\x99\x05\n\x14\x41ssembleCatalogInput\x12@\n\tconstants\x18\x01 \x01(\x0b\x32-.hamiltonjlucas.formularium_constants.Catalog\x12H\n\x0b\x65lectroweak\x18\x02 \x01(\x0b\x32\x33.hamiltonjlucas.formularium_constants.DomainCatalog\x12\x43\n\x06\x66lavor\x18\x03 \x01(\x0b\x32\x33.hamiltonjlucas.formularium_constants.DomainCatalog\x12G\n\nbz_cascade\x18\x04 \x01(\x0b\x32\x33.hamiltonjlucas.formularium_constants.DomainCatalog\x12\x43\n\x06\x61tomic\x18\x05 \x01(\x0b\x32\x33.hamiltonjlucas.formularium_constants.DomainCatalog\x12\x42\n\x05\x65m_si\x18\x06 \x01(\x0b\x32\x33.hamiltonjlucas.formularium_constants.DomainCatalog\x12K\n\x0egravity_thermo\x18\x07 \x01(\x0b\x32\x33.hamiltonjlucas.formularium_constants.DomainCatalog\x12\x46\n\tcosmology\x18\x08 \x01(\x0b\x32\x33.hamiltonjlucas.formularium_constants.DomainCatalog\x12I\n\x0cquantum_info\x18\t \x01(\x0b\x32\x33.hamiltonjlucas.formularium_constants.DomainCatalogb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'messages_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_EMPTY']._serialized_start=102
-  _globals['_EMPTY']._serialized_end=109
-  _globals['_ASSEMBLECATALOGINPUT']._serialized_start=112
-  _globals['_ASSEMBLECATALOGINPUT']._serialized_end=741
+  _globals['_ASSEMBLECATALOGINPUT']._serialized_start=107
+  _globals['_ASSEMBLECATALOGINPUT']._serialized_end=772
 # @@protoc_insertion_point(module_scope)

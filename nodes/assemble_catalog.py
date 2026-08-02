@@ -1,5 +1,5 @@
 from gen.axiom_context import AxiomContext
-from gen.hamiltonjlucas_formularium_types_messages_pb2 import Catalog
+from gen.hamiltonjlucas_formularium_constants_messages_pb2 import Catalog
 from gen.messages_pb2 import AssembleCatalogInput
 
 _DOMAIN_FIELDS = (
