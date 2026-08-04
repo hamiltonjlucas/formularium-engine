@@ -1,4 +1,4 @@
-from gen.hamiltonjlucas_formularium_constants_messages_pb2 import SynthesizeShardRequest
+from gen.hamiltonjlucas_formularium_types_messages_pb2 import SynthesizeShardRequest
 from nodes.synthesize_relations import synthesize_relations
 from nodes.testlib import small_catalog
 

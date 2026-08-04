@@ -1,4 +1,4 @@
-from gen.hamiltonjlucas_formularium_constants_messages_pb2 import SweepReport
+from gen.hamiltonjlucas_formularium_types_messages_pb2 import SweepReport
 from nodes.assemble_sweep_report import assemble_sweep_report
 
 

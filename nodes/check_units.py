@@ -1,5 +1,5 @@
 from gen.axiom_context import AxiomContext
-from gen.hamiltonjlucas_formularium_constants_messages_pb2 import Catalog, UnitsReport
+from gen.hamiltonjlucas_formularium_types_messages_pb2 import Catalog, UnitsReport
 from nodes import catalog_lib, units_lib
 
 

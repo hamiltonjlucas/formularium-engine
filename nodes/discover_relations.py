@@ -2,7 +2,7 @@ import itertools
 import math
 
 from gen.axiom_context import AxiomContext
-from gen.hamiltonjlucas_formularium_constants_messages_pb2 import Catalog, DiscoverReport
+from gen.hamiltonjlucas_formularium_types_messages_pb2 import Catalog, DiscoverReport
 from nodes import catalog_lib
 
 MATH = {"pi": (math.pi, 0.0, 0), "2": (2.0, 0.0, 0), "3": (3.0, 0.0, 0)}

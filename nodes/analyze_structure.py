@@ -1,5 +1,5 @@
 from gen.axiom_context import AxiomContext
-from gen.hamiltonjlucas_formularium_constants_messages_pb2 import Catalog, StructureReport
+from gen.hamiltonjlucas_formularium_types_messages_pb2 import Catalog, StructureReport
 from nodes import catalog_lib
 from nodes.build_graph import nx_graph
 

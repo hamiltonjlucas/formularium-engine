@@ -1,6 +1,6 @@
 from google.protobuf import json_format
 
-from gen.hamiltonjlucas_formularium_constants_messages_pb2 import Catalog, DomainCatalog
+from gen.hamiltonjlucas_formularium_types_messages_pb2 import Catalog, DomainCatalog
 from gen.messages_pb2 import AssembleCatalogInput
 from nodes.assemble_catalog import assemble_catalog
 from nodes.testlib import small_catalog

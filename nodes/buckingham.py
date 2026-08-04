@@ -2,7 +2,7 @@ import math
 from functools import reduce
 
 from gen.axiom_context import AxiomContext
-from gen.hamiltonjlucas_formularium_constants_messages_pb2 import BuckinghamReport, Catalog
+from gen.hamiltonjlucas_formularium_types_messages_pb2 import BuckinghamReport, Catalog
 from nodes import catalog_lib
 
 # Catalog-mode quantity sets (natural units, one base dimension = mass).

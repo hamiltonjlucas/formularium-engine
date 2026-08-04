@@ -1,7 +1,7 @@
 from google.protobuf import json_format
 
 from gen.axiom_context import AxiomContext
-from gen.hamiltonjlucas_formularium_constants_messages_pb2 import Catalog, DomainCatalog
+from gen.hamiltonjlucas_formularium_types_messages_pb2 import Catalog, DomainCatalog
 from gen.messages_pb2 import AssembleCatalogInput
 
 _DOMAIN_FIELDS = (

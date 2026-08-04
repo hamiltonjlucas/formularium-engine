@@ -1,5 +1,5 @@
 # Test-time path shim: protoc emits absolute sibling imports inside gen/ (e.g.
-# `import hamiltonjlucas_formularium_constants_messages_pb2`) because messages.proto
+# `import hamiltonjlucas_formularium_types_messages_pb2`) because messages.proto
 # embeds imported types. The platform service runtime has gen/ on its path; this
 # gives pytest the same view. Not generated — safe to keep.
 import os

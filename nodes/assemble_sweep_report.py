@@ -1,5 +1,5 @@
 from gen.axiom_context import AxiomContext
-from gen.hamiltonjlucas_formularium_constants_messages_pb2 import SweepReport
+from gen.hamiltonjlucas_formularium_types_messages_pb2 import SweepReport
 
 
 def assemble_sweep_report(ax: AxiomContext, input: SweepReport) -> SweepReport:

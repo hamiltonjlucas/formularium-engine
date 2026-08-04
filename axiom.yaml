@@ -1,5 +1,5 @@
 name: hamiltonjlucas/formularium-engine
-version: 0.1.0
+version: 0.3.0
 language: python
 description: 'Formularium discovery/analysis engines over the assembled physics catalog: validation, dimensional analysis, unit checks, relationship graph, structural analysis, curated symbolic derivation, numeric relation discovery, Buckingham-pi, and streaming exhaustive formula synthesis.'
 license: Apache-2.0
@@ -39,36 +39,36 @@ nodes:
       input: SweepReport
       output: SweepReport
 imports:
-    - package: hamiltonjlucas/formularium-constants
-      version: 0.2.0
+    - package: hamiltonjlucas/formularium-types
+      version: 0.3.0
       messages:
         - GraphReport
-        - BuckinghamGroup
-        - BuckinghamReport
         - SynthesizeShardRequest
-        - FormulaResult
-        - BuckinghamSet
-        - DerivationResult
-        - SynthesisStats
-        - Catalog
-        - ValidationReport
-        - DimensionsReport
-        - UnitsReport
-        - GraphEdge
-        - StructureReport
-        - FormulaSpec
-        - ValidationIssue
-        - GraphNode
-        - DiscoverReport
-        - CentralityEntry
-        - ConstantSpec
-        - DomainCatalog
-        - DimensionCheck
-        - DeriveReport
-        - SynthesizeEvent
-        - Empty
         - QuantitySpec
-        - UnitConversionCheck
+        - GraphEdge
+        - BuckinghamGroup
+        - BuckinghamSet
         - RelationCandidate
+        - ValidationIssue
+        - DerivationResult
+        - SynthesizeEvent
+        - ValidationReport
+        - GraphNode
+        - StructureReport
+        - Catalog
+        - DimensionCheck
+        - DimensionsReport
+        - DeriveReport
         - SynthesizedRelation
         - SweepReport
+        - CentralityEntry
+        - FormulaResult
+        - UnitConversionCheck
+        - DiscoverReport
+        - Empty
+        - ConstantSpec
+        - UnitsReport
+        - BuckinghamReport
+        - FormulaSpec
+        - DomainCatalog
+        - SynthesisStats
